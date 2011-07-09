@@ -1,55 +1,13 @@
-App-DiFm-GetPlaylists
+Use this script to automatically grab playlists from DI.fm. It's pretty dirty, so I don't figure it'll be bulletproof. 
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+At it's basic usage, run this to get all free playlists in pls format:
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+di-fm-get_playlists.pl
 
+To grab premium playlists, do the following:
 
-INSTALLATION
+di-fm-get_playlists.pl --premium --user='username' --pass='pass'
 
-To install this module, run the following commands:
+If you would prefer M3U formatted playlists, pass in the --m3u argument.
 
-	perl Makefile.PL
-	make
-	make test
-	make install
-
-SUPPORT AND DOCUMENTATION
-
-After installing, you can find documentation for this module with the
-perldoc command.
-
-    perldoc App::DiFm::GetPlaylists
-
-You can also look for information at:
-
-    RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-DiFm-GetPlaylists
-
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/App-DiFm-GetPlaylists
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/App-DiFm-GetPlaylists
-
-    Search CPAN
-        http://search.cpan.org/dist/App-DiFm-GetPlaylists/
-
-
-LICENSE AND COPYRIGHT
-
-Copyright (C) 2011 Ben Kolera
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
 
