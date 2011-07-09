@@ -11,3 +11,6 @@ di-fm-get_playlists.pl --premium --user='username' --pass='pass'
 If you would prefer M3U formatted playlists, pass in the --m3u argument.
 
 
+Based off of the scripts found here: 
+
+http://mpd.wikia.com/wiki/Hack:di.fm-playlists
